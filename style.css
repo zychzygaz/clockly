@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
 * {
     margin: 0;
@@ -6,87 +7,75 @@
     box-sizing: border-box;
 }
 
-span {
-    font-size: 122px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.container {
-    background-color: wheat;
-    border: 30px solid black;
-    width: 700px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    position: relative;
-    border-radius: 10px;
-}
-
-
 body {
     height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
-}
-
-/* video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-    
-} */
-
-
-#clo {
-    position: absolute;
-    top: -80px;
-    font-size: 50px;
-    font-weight: bold;
-    color: azure;
+    font-family: 'DotGothic16', sans-serif;
     background-color: black;
-    padding: 10px 10px;
-    /* border: 6px solid red; */
-}
-
-
-@media (max-width: 570px) {
-    
-.container {
-    background-color: wheat;
-    border: 15px solid black;
-    width: 350px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-    position: relative;
-    border-radius: 5px;
+    color: wheat;
 }
 
 span {
-    font-size: 66px;
+    font-size: 140px;
 }
 
-#clo {
-    position: absolute;
-    top: -39px;
-    font-size: 25px;
-    font-weight: bold;
-    color: azure;
-    background-color: black;
-    padding: 5px 5px;
-
-    /* border: 6px solid red; */
+.relative {
+    /* width: 25%; */
+    text-align: center;
 }
 
 
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 80px;
+    background-color: teal;
+    color: white;
+}
+
+@media (max-width: 720px) {
+    span {
+        font-size: 100px;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    .date span {
+        font-size: 65px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    span {
+        font-size: 80px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .date span {
+        font-size: 55px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    span {
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    .date span {
+        font-size: 45px;
+    }
 }
